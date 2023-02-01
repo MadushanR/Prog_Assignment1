@@ -25,57 +25,57 @@ if character == 1 :
     Shrek.jump =  challenge_1[2] #stores third value returned by  Game.challenge_1 function
     print(f"Your dice roll value is {dice_roll} and jump is {Shrek.jump}")
     if Shrek_Win_1 == True :
-        input("You have won the first challenge \n For the second challenge you need to unlock the door ahead of you, you need a dice roll value above 7 to win \nPress enter to continue\n")
+        input("You have won the first challenge \n\n For the second challenge you need to unlock the door ahead of you, you need a dice roll value above 7 to win \nPress enter to continue\n")
         challenge_2 = Game.challenge_2(Shrek.intelligence) #This variable stores values returned by Game.challenge_2 function 
         dice_roll = challenge_2[0] #stores first value returned by  Game.challenge_2 function
         Shrek_Win_2 = challenge_2[1] #stores second value returned by  Game.challenge_2 function
         Shrek.intelligence =  challenge_2[2] #stores third value returned by  Game.challenge_2 function
         print(f"Your dice roll value is {dice_roll} and intelligence is {Shrek.intelligence}")
         if Shrek_Win_2 == True :
-            input("You have won the second challenge \n For the third and final challenge you need to fight the Mad King Arthur, you need a dice roll value above 9 to win\nPress enter to continue\n")
+            input("You have won the second challenge \n\n For the third and final challenge you need to fight the Mad King Arthur, you need a dice roll value above 9 to win\nPress enter to continue\n")
             challenge_3 = Game.challenge_3(Shrek.power) #This variable stores values returned by Game.challenge_2 function 
             dice_roll = challenge_3[0] #stores first value returned by  Game.challenge_2 function
             Shrek_Win_3 = challenge_3[1] #stores second value returned by  Game.challenge_2 function
             Shrek.power =  challenge_3[2] #stores third value returned by  Game.challenge_2 function
             print(f"Your dice roll value is {dice_roll} and power is {Shrek.power}")
             if Shrek_Win_3 == True :
-                print("Congratulations you won the game")
+                print("\nCongratulations you won the game\n")
             else :
-                print("You lost the third round")
+                print("You lost the third round\n")
         else :
-            print("You have lost the second round")
+            print("You have lost the second round\n")
     else :
-        print("You have lost the first round")
+        print("You have lost the first round\n")
     
     print("\nWelcome Nemo\n")
-    input("As the first challenge you need to swim across a river full of crocodiles, you need a dice roll value above 5 to win\nPress enter to continue as Nemo")
+    input("\nAs the first challenge you need to swim across a river full of crocodiles, you need a dice roll value above 5 to win\nPress enter to continue as Nemo")
     challenge_1 = Game.challenge_1(Nemo.swimmming)
     dice_roll = challenge_1[0]
     Nemo_Win_1 = challenge_1[1]
     Nemo.swimmming =  challenge_1[2]
     print(f"Your dice roll value is {dice_roll} and swimming is {Nemo.swimmming}")
     if Nemo_Win_1 == True :
-        input("You have won the first challenge \n For the second challenge you need to unlock the door ahead of you, you need a dice roll value above 7 to win \nPress enter to continue\n")
+        input("You have won the first challenge \n\n For the second challenge you need to unlock the door ahead of you, you need a dice roll value above 7 to win \nPress enter to continue\n")
         challenge_2 = Game.challenge_2(Nemo.intelligence)
         dice_roll = challenge_2[0]
         Nemo_Win_2 = challenge_2[1]
         Nemo.intelligence =  challenge_2[2]
         print(f"Your dice roll value is {dice_roll} and intelligence is {Nemo.intelligence}")
         if Nemo_Win_2 == True :
-            input("You have won the second challenge \n For the third and final challenge you need to fight the Mad King Arthur, you need a dice roll value above 9 to win\nPress enter to continue\n")
+            input("You have won the second challenge \n\n For the third and final challenge you need to fight the Mad King Arthur, you need a dice roll value above 9 to win\nPress enter to continue\n")
             challenge_3 = Game.challenge_3(Nemo.speed)
             dice_roll = challenge_3[0]
             Nemo_Win_3 = challenge_3[1]
             Nemo.speed =  challenge_3[2]
             print(f"Your dice roll value is {dice_roll} and speed is {Nemo.speed}")
             if Nemo_Win_3 == True :
-                print("Congratulations you won the game")
+                print("\nCongratulations you won the game")
             else :
-                print("You lost the third round")
+                print("You lost the third round\n")
         else :
-            print("You have lost the second round")
+            print("You have lost the second round\n")
     else :
-        print("You have lost the first round")
+        print("You have lost the first round\n")
 
 else :
 
@@ -144,8 +144,8 @@ Shrek_Attribute_Avg = (Shrek.intelligence + Shrek.jump + Shrek.power)/3 #calcula
 Nemo_Attribute_Avg = (Nemo.intelligence + Nemo.speed + Nemo.swimmming)/3 #calculates average of attributes
 
 if Shrek_Attribute_Avg > Nemo_Attribute_Avg : 
-    print("Shrek is the MVP") #if shrek's average is high then outputs shrek is MVP
+    print("\nShrek is the MVP") #if shrek's average is high then outputs shrek is MVP
 elif Shrek_Attribute_Avg == Nemo_Attribute_Avg :
-    print("No MVP")
+    print("\nNo MVP")
 else :
-    print("Nemo is the MVP") #if nemo's average is high then outputs nemo is MVP
+    print("\nNemo is the MVP") #if nemo's average is high then outputs nemo is MVP
